@@ -14,11 +14,6 @@ class AlertsServiceProvider extends ServiceProvider
     public function boot()
     {
         /**
-        * Include helpers
-        */
-        include_once __DIR__ . "/helpers.php";
-
-        /**
         * Set views dir
         */
         $this->loadViewsFrom(__DIR__.'/resources/views', 'laravel-bootstrap-alerts');
