@@ -92,7 +92,7 @@ class Alerts {
 
 	private function addAlert(string $text, string $type)
 	{
-		$this->alerts[$type] = $this->alerts[$type] ?: [];
+		$this->alerts[$type] = $this->alerts[$type] ?? [];
 
 		$this->alerts[$type][] = $text;
 
