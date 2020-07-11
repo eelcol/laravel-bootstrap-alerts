@@ -1,6 +1,6 @@
 @if($errors->any())
 
-	@include("laravel-bootstrap-alerts::error", ['type' => 'danger', 'list' => $errors->all()])
+	@include("laravel-bootstrap-alerts::alert", ['type' => 'danger', 'list' => $errors->all()])
 @endif
 
 @foreach($alerts as $type => $messages)
